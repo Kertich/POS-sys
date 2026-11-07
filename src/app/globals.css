@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+:root {
+  --primary: #146b45;
+  --primary-dark: #0c5133;
+  --primary-soft: #e5f2e9;
+  --warning: #a45b08;
+  --danger: #b42318;
+  --surface: #ffffff;
+  --background: #f4f6f3;
+  --text: #19231e;
+  --muted: #64736a;
+  --border: #dce4dd;
+  --font-sans: var(--font-inter), Arial, sans-serif;
+}
+
+* { box-sizing: border-box; }
+html { background: var(--background); }
+body { margin: 0; color: var(--text); background: var(--background); font-family: var(--font-sans); -webkit-tap-highlight-color: transparent; }
+button, input, select, textarea { font: inherit; }
+button { cursor: pointer; }
+.sun-mode {
+  --primary: #07502e;
+  --primary-dark: #053b22;
+  --primary-soft: #d7eddf;
+  --warning: #703b00;
+  --danger: #8d160d;
+  --surface: #fff;
+  --background: #fff;
+  --text: #090f0b;
+  --muted: #37483d;
+  --border: #86948a;
+}
+.safe-bottom { padding-bottom: env(safe-area-inset-bottom); }
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { scrollbar-width: none; }
+
+@media print {
+  body { background: white; }
+  .no-print { display: none !important; }
+  .receipt-print { width: 58mm !important; margin: 0 auto; color: #000; font: 12px monospace; }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Soko Staff POS",
+  "short_name": "Soko POS",
+  "description": "Fast, offline-ready sales for Kenyan shops",
+  "start_url": "/home",
+  "display": "standalone",
+  "background_color": "#f5f7f4",
+  "theme_color": "#146b45",
+  "icons": [
+    { "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}
